@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:id="@id/productNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/search_icon"
+                android:contentDescription="Menu" />
+        </LinearLayout>
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nike_air_max_270_react_eng"
+            android:paddingTop="12dp"/>
+
+        <!-- Product Info -->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bag_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:layout_marginEnd="8dp" />
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$299.43"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="8dp" />
+
+        <!-- Rating and Reviews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+
+        </LinearLayout>
+
+        <!-- Size and Color Options -->
+        <TextView
+            android:id="@+id/selectSizeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Size"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Size Options (Buttons or Chips) -->
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/round_bg"
+                android:textSize="18sp"
+                android:text="6" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/round_bg"
+                android:textSize="18sp"
+                android:text="7"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:text="8" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:text="9" />
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="8dp"
+                android:textSize="15sp"
+                android:text="10" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/round_bg"
+                android:layout_marginStart="8dp"
+                android:textSize="15sp"
+                android:text="11" />
+
+
+            <!-- Add more size options as needed -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/selectColorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Color Options (Buttons or Chips) -->
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:text="" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#964B00"
+                android:text=""
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text=""
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:text=""
+                android:layout_marginStart="8dp" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/holo_purple"
+                android:text=""
+                android:layout_marginStart="8dp" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text=""
+                android:layout_marginStart="8dp" />
+            <!-- Add more color options as needed -->
+        </LinearLayout>
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/specificationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specification"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/specificationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Melvill &amp; Monn BAG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience."
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Review Section -->
+        <TextView
+            android:id="@+id/reviewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review Product"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:layout_marginEnd="8dp" />
+        <TextView
+            android:id="@+id/reviewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5 (5 Review)"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/seeMoreReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginStart="8dp" />
+
+        <!-- Reviews RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviewsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- You Might Also Like Section -->
+        <TextView
+            android:id="@+id/youMightAlsoLikeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Might Also Like"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewYouMightAlsoLike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add To Cart"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
